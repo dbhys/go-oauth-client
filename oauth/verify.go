@@ -92,6 +92,7 @@ func (v *TokenVerifier) Verify(ctx context.Context, rawToken string) (*OAuthToke
 	t := &OAuthToken{
 		Issuer:          token.Issuer,
 		Subject:         token.Subject,
+		Name:            token.Name,
 		Audience:        token.Audience,
 		Expiry:          time.Time(token.Expiry),
 		IssuedAt:        time.Time(token.IssuedAt),

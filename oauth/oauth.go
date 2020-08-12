@@ -171,6 +171,7 @@ type OAuthToken struct {
 type oAuthToken struct {
 	Issuer   string   `json:"iss"`
 	Subject  string   `json:"sub"`
+	UserName string   `json:"name"`
 	Audience []string `json:"aud,omitempty"`
 	Expiry   jsonTime `json:"exp"`
 	IssuedAt jsonTime `json:"iat,omitempty"`
